@@ -236,7 +236,7 @@ function Footer() {
                     </p>
                     <nav className="flex gap-4 text-sm">
                         <Link
-                            href="/policy"
+                            href="/privacy"
                             className="hover:text-primary transition-colors"
                         >
                             Chính sách quyền riêng tư
