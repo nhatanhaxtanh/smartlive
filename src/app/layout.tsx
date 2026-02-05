@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: 'Smart Live',
-    description: 'Được tạo bằng Create Next App',
+    description: 'Phần mềm quản lý tòa nhà chung cư',
 };
 
 export default function RootLayout({

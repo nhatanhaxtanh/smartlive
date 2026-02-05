@@ -54,7 +54,7 @@ const AccordionItem = ({
 
     return (
         <div
-            className={`relative h-[450px] cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-in-out ${isActive ? 'w-[400px]' : 'w-[60px]'} `}
+            className={`relative h-112.5 cursor-pointer overflow-hidden rounded-2xl transition-all duration-700 ease-in-out ${isActive ? 'w-100' : 'w-15'} `}
             onMouseEnter={onMouseEnter}
         >
             {/* Background Image */}

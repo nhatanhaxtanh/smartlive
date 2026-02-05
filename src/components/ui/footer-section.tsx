@@ -233,7 +233,7 @@ function Footer() {
                 </div>
                 <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
                     <p className="text-muted-foreground text-sm">
-                        © 2024 Tên công ty. Đã đăng ký bản quyền.
+                        © 2026 Smart Live. Đã đăng ký bản quyền.
                     </p>
                     <nav className="flex gap-4 text-sm">
                         <a
