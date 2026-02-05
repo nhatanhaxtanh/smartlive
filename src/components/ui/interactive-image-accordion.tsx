@@ -115,7 +115,7 @@ export function LandingAccordionItem() {
                         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:justify-start">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#3DDC84] to-[#2EBE73] px-4 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-[#2EBE73] hover:to-[#1FAE62] dark:from-[#3DDC84] dark:to-[#2EBE73] dark:text-[#0b1f14] dark:hover:from-[#2EBE73] dark:hover:to-[#1FAE62] dark:hover:text-white"
+                                className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#3DDC84] to-[#2EBE73] px-4 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-[#2EBE73] hover:to-[#1FAE62] dark:from-[#3DDC84] dark:to-[#2EBE73] dark:hover:from-[#2EBE73] dark:hover:to-[#1FAE62]"
                             >
                                 <span>Tải về cho Android</span>
                                 <Image
@@ -123,12 +123,12 @@ export function LandingAccordionItem() {
                                     alt=""
                                     width={24}
                                     height={24}
-                                    className="-translate-y-0.2 h-6 w-6 object-contain opacity-90"
+                                    className="-translate-y-0.2 h-6 w-6 object-contain"
                                 />
                             </a>
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#007AFF] to-[#005FCC] px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-[#005FCC] hover:to-[#0047A6] hover:text-white dark:from-[#007AFF] dark:to-[#005FCC] dark:text-white dark:hover:from-[#005FCC] dark:hover:to-[#0047A6] dark:hover:text-white"
+                                className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#007AFF] to-[#005FCC] px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-[#005FCC] hover:to-[#0047A6] hover:text-white dark:from-[#007AFF] dark:to-[#005FCC] dark:hover:from-[#005FCC] dark:hover:to-[#0047A6]"
                             >
                                 <span>Tải về cho IOS</span>
                                 <Image
@@ -136,7 +136,7 @@ export function LandingAccordionItem() {
                                     alt=""
                                     width={24}
                                     height={24}
-                                    className="h-6 w-6 -translate-y-0.5 object-contain opacity-90"
+                                    className="h-6 w-6 -translate-y-0.5 object-contain"
                                 />
                             </a>
                         </div>
