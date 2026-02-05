@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Be_Vietnam_Pro, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/ui/header-3';
 import { Footer } from '@/components/ui/footer-section';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin'],
+const beVietnamPro = Be_Vietnam_Pro({
+    variable: '--font-be-vietnam-pro',
+    subsets: ['latin', 'vietnamese'],
+    weight: ['400', '500', '600', '700'],
 });
 
 const geistMono = Geist_Mono({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'Ứng dụng Next.js',
+    title: 'Smart Live',
     description: 'Được tạo bằng Create Next App',
 };
 
@@ -27,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="vi">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${beVietnamPro.variable} ${geistMono.variable} antialiased`}
             >
                 {<Header />}
                 {children}
