@@ -50,16 +50,16 @@ function Footer() {
                 <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                     <div className="relative">
                         <h2 className="mb-4 text-3xl font-bold tracking-tight">
-                            Stay Connected
+                            Kết nối cùng chúng tôi
                         </h2>
                         <p className="text-muted-foreground mb-6">
-                            Join our newsletter for the latest updates and
-                            exclusive offers.
+                            Đăng ký nhận bản tin để cập nhật mới nhất và ưu đãi
+                            độc quyền.
                         </p>
                         <form className="relative">
                             <Input
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder="Nhập email của bạn"
                                 className="pr-12 backdrop-blur-sm"
                             />
                             <Button
@@ -68,62 +68,62 @@ function Footer() {
                                 className="bg-primary text-primary-foreground absolute top-1 right-1 h-8 w-8 rounded-full transition-transform hover:scale-105"
                             >
                                 <Send className="h-4 w-4" />
-                                <span className="sr-only">Subscribe</span>
+                                <span className="sr-only">Đăng ký</span>
                             </Button>
                         </form>
                         <div className="bg-primary/10 absolute top-0 -right-4 h-24 w-24 rounded-full blur-2xl" />
                     </div>
                     <div>
                         <h3 className="mb-4 text-lg font-semibold">
-                            Quick Links
+                            Liên kết nhanh
                         </h3>
                         <nav className="space-y-2 text-sm">
                             <a
                                 href="#"
                                 className="hover:text-primary block transition-colors"
                             >
-                                Home
+                                Trang chủ
                             </a>
                             <a
                                 href="#"
                                 className="hover:text-primary block transition-colors"
                             >
-                                About Us
+                                Về chúng tôi
                             </a>
                             <a
                                 href="#"
                                 className="hover:text-primary block transition-colors"
                             >
-                                Services
+                                Dịch vụ
                             </a>
                             <a
                                 href="#"
                                 className="hover:text-primary block transition-colors"
                             >
-                                Products
+                                Sản phẩm
                             </a>
                             <a
                                 href="#"
                                 className="hover:text-primary block transition-colors"
                             >
-                                Contact
+                                Liên hệ
                             </a>
                         </nav>
                     </div>
                     <div>
                         <h3 className="mb-4 text-lg font-semibold">
-                            Contact Us
+                            Liên hệ
                         </h3>
                         <address className="space-y-2 text-sm not-italic">
-                            <p>123 Innovation Street</p>
-                            <p>Tech City, TC 12345</p>
-                            <p>Phone: (123) 456-7890</p>
+                            <p>123 Đường Đổi Mới</p>
+                            <p>Thành phố Công Nghệ, TC 12345</p>
+                            <p>Điện thoại: (123) 456-7890</p>
                             <p>Email: hello@example.com</p>
                         </address>
                     </div>
                     <div className="relative">
                         <h3 className="mb-4 text-lg font-semibold">
-                            Follow Us
+                            Theo dõi chúng tôi
                         </h3>
                         <div className="mb-6 flex space-x-4">
                             <TooltipProvider>
@@ -141,7 +141,7 @@ function Footer() {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Follow us on Facebook</p>
+                                        <p>Theo dõi chúng tôi trên Facebook</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -160,7 +160,7 @@ function Footer() {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Follow us on Twitter</p>
+                                        <p>Theo dõi chúng tôi trên Twitter</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -179,7 +179,7 @@ function Footer() {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Follow us on Instagram</p>
+                                        <p>Theo dõi chúng tôi trên Instagram</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -198,7 +198,7 @@ function Footer() {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Connect with us on LinkedIn</p>
+                                        <p>Kết nối với chúng tôi trên LinkedIn</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
@@ -212,33 +212,33 @@ function Footer() {
                             />
                             <Moon className="h-4 w-4" />
                             <Label htmlFor="dark-mode" className="sr-only">
-                                Toggle dark mode
+                                Bật/tắt chế độ tối
                             </Label>
                         </div>
                     </div>
                 </div>
                 <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
                     <p className="text-muted-foreground text-sm">
-                        © 2024 Your Company. All rights reserved.
+                        © 2024 Tên công ty. Đã đăng ký bản quyền.
                     </p>
                     <nav className="flex gap-4 text-sm">
                         <a
                             href="#"
                             className="hover:text-primary transition-colors"
                         >
-                            Privacy Policy
+                            Chính sách quyền riêng tư
                         </a>
                         <a
                             href="#"
                             className="hover:text-primary transition-colors"
                         >
-                            Terms of Service
+                            Điều khoản dịch vụ
                         </a>
                         <a
                             href="#"
                             className="hover:text-primary transition-colors"
                         >
-                            Cookie Settings
+                            Cài đặt cookie
                         </a>
                     </nav>
                 </div>
