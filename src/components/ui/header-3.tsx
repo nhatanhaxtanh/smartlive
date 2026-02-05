@@ -152,8 +152,9 @@ export function Header() {
                     </NavigationMenu>
                 </div>
                 <div className="hidden items-center gap-2 md:flex">
-                    <Button variant="outline">Đăng nhập</Button>
-                    <Button>Bắt đầu</Button>
+					<Button className="cursor-pointer bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
+                        Đăng ký demo ngay!
+                    </Button>
                 </div>
                 <Button
                     size="icon"
@@ -191,10 +192,9 @@ export function Header() {
                     </div>
                 </NavigationMenu>
                 <div className="flex flex-col gap-2">
-                    <Button variant="outline" className="w-full bg-transparent">
-                        Đăng nhập
+					<Button className="w-full bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
+                        Đăng ký demo ngay!
                     </Button>
-                    <Button className="w-full">Bắt đầu</Button>
                 </div>
             </MobileMenu>
         </header>

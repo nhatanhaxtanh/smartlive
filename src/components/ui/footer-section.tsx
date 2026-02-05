@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -49,9 +50,22 @@ function Footer() {
             <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
                 <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                     <div className="relative">
-                        <h2 className="mb-4 text-3xl font-bold tracking-tight">
-                            Kết nối cùng chúng tôi
-                        </h2>
+                        <a
+                            href="#"
+                            className="-mt-5 mb-4 inline-flex items-center gap-0"
+                        >
+                            <Image
+                                src="/logo.png"
+                                alt="Smart Live"
+                                width={56}
+                                height={56}
+                                className="h-18 w-18"
+                            />
+                            <span className="text-4xl font-bold tracking-tight">
+                                <span className="text-emerald-500">Smart</span>{' '}
+                                <span className="text-blue-600">Live</span>
+                            </span>
+                        </a>
                         <p className="text-muted-foreground mb-6">
                             Đăng ký nhận bản tin để cập nhật mới nhất và ưu đãi
                             độc quyền.
@@ -65,7 +79,7 @@ function Footer() {
                             <Button
                                 type="submit"
                                 size="icon"
-                                className="bg-primary text-primary-foreground absolute top-1 right-1 h-8 w-8 rounded-full transition-transform hover:scale-105"
+                                className="absolute top-1 right-1 h-8 w-8 rounded-full bg-blue-600 text-white transition-transform hover:scale-105 hover:bg-blue-700"
                             >
                                 <Send className="h-4 w-4" />
                                 <span className="sr-only">Đăng ký</span>
@@ -111,9 +125,7 @@ function Footer() {
                         </nav>
                     </div>
                     <div>
-                        <h3 className="mb-4 text-lg font-semibold">
-                            Liên hệ
-                        </h3>
+                        <h3 className="mb-4 text-lg font-semibold">Liên hệ</h3>
                         <address className="space-y-2 text-sm not-italic">
                             <p>123 Đường Đổi Mới</p>
                             <p>Thành phố Công Nghệ, TC 12345</p>
@@ -198,7 +210,9 @@ function Footer() {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Kết nối với chúng tôi trên LinkedIn</p>
+                                        <p>
+                                            Kết nối với chúng tôi trên LinkedIn
+                                        </p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
