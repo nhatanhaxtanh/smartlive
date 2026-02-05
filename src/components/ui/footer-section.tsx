@@ -3,6 +3,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -24,25 +25,14 @@ import {
 } from 'lucide-react';
 
 function Footer() {
-    const [isDarkMode, setIsDarkMode] = React.useState(false);
+    const { resolvedTheme, setTheme } = useTheme();
+    const [mounted, setMounted] = React.useState(false);
 
     React.useEffect(() => {
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const syncTheme = () => setIsDarkMode(mediaQuery.matches);
-
-        syncTheme();
-        mediaQuery.addEventListener('change', syncTheme);
-
-        return () => mediaQuery.removeEventListener('change', syncTheme);
+        setMounted(true);
     }, []);
 
-    React.useEffect(() => {
-        if (isDarkMode) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    }, [isDarkMode]);
+    const isDarkMode = resolvedTheme === 'dark';
 
     return (
         <footer className="bg-background text-foreground relative border-t transition-colors duration-300">
@@ -220,8 +210,10 @@ function Footer() {
                             <Sun className="h-4 w-4" />
                             <Switch
                                 id="dark-mode"
-                                checked={isDarkMode}
-                                onCheckedChange={setIsDarkMode}
+                                checked={mounted ? isDarkMode : false}
+                                onCheckedChange={(checked) =>
+                                    setTheme(checked ? 'dark' : 'light')
+                                }
                             />
                             <Moon className="h-4 w-4" />
                             <Label htmlFor="dark-mode" className="sr-only">

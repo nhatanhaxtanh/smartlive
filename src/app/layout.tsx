@@ -3,6 +3,7 @@ import { Be_Vietnam_Pro, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/ui/header-3';
 import { Footer } from '@/components/ui/footer-section';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const beVietnamPro = Be_Vietnam_Pro({
     variable: '--font-be-vietnam-pro',
@@ -26,13 +27,20 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="vi">
+        <html lang="vi" suppressHydrationWarning>
             <body
                 className={`${beVietnamPro.variable} ${geistMono.variable} antialiased`}
             >
-                {<Header />}
-                {children}
-                {<Footer />}
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    {<Header />}
+                    {children}
+                    {<Footer />}
+                </ThemeProvider>
             </body>
         </html>
     );
