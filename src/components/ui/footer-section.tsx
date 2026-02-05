@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -234,12 +235,12 @@ function Footer() {
                         © 2026 Smart Live. Đã đăng ký bản quyền.
                     </p>
                     <nav className="flex gap-4 text-sm">
-                        <a
-                            href="#"
+                        <Link
+                            href="/policy"
                             className="hover:text-primary transition-colors"
                         >
                             Chính sách quyền riêng tư
-                        </a>
+                        </Link>
                         <a
                             href="#"
                             className="hover:text-primary transition-colors"

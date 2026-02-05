@@ -30,6 +30,7 @@ import {
     PlugIcon,
 } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type LinkItem = {
     title: string;
@@ -65,8 +66,8 @@ export function Header() {
         >
             <nav className="mx-auto flex h-14 w-full max-w-7xl items-center justify-between px-4">
                 <div className="flex items-center gap-5">
-                    <a
-                        href="#"
+                    <Link
+                        href="/"
                         className="hover:bg-accent flex items-center gap-1 rounded-md p-2"
                     >
                         <Image
@@ -81,7 +82,7 @@ export function Header() {
                             <span className="text-emerald-500">Smart</span>{' '}
                             <span className="text-blue-600">Live</span>
                         </span>
-                    </a>
+                    </Link>
                     <NavigationMenu className="hidden md:flex">
                         <NavigationMenuList>
                             <NavigationMenuItem>
@@ -152,7 +153,7 @@ export function Header() {
                     </NavigationMenu>
                 </div>
                 <div className="hidden items-center gap-2 md:flex">
-					<Button className="cursor-pointer bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
+                    <Button className="cursor-pointer bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
                         Đăng ký demo ngay!
                     </Button>
                 </div>
@@ -192,7 +193,7 @@ export function Header() {
                     </div>
                 </NavigationMenu>
                 <div className="flex flex-col gap-2">
-					<Button className="w-full bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
+                    <Button className="w-full bg-gradient-to-r from-emerald-500 to-blue-600 font-bold text-white transition-all duration-300 hover:scale-[1.06] hover:ring-4 hover:ring-emerald-400/30 hover:brightness-110 active:scale-[1.03]">
                         Đăng ký demo ngay!
                     </Button>
                 </div>
