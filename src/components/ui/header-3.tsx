@@ -85,6 +85,14 @@ export function Header() {
                     </Link>
                     <NavigationMenu className="hidden md:flex">
                         <NavigationMenuList>
+                            <NavigationMenuLink className="px-4" asChild>
+                                <a
+                                    href={'/'}
+                                    className="hover:bg-accent rounded-md p-2"
+                                >
+                                    Trang chủ
+                                </a>
+                            </NavigationMenuLink>
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className="bg-transparent">
                                     Sản phẩm
