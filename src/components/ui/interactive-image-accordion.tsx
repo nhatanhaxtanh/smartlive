@@ -127,7 +127,7 @@ export function LandingAccordionItem() {
                                 />
                             </a>
                             <a
-                                href="#contact"
+                                href="https://apps.apple.com/us/app/smart-live/id6758622156?ppid=6ae1bdd7-969b-426d-ae39-0222af2b7f84"
                                 className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#007AFF] to-[#005FCC] px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-[#005FCC] hover:to-[#0047A6] hover:text-white dark:from-[#007AFF] dark:to-[#005FCC] dark:hover:from-[#005FCC] dark:hover:to-[#0047A6]"
                             >
                                 <span>Tải về cho IOS</span>
